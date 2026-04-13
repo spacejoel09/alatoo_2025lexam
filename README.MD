@@ -1,6 +1,6 @@
-# ✅ TODO-APP 
+# ✅ TODO-APP
 
-> Современное Full-stack приложение для управления задачами с использованием FastAPI и Next.js.
+> Full Stack приложение ради Ala-Too 2nd semester
 
 ---
 
@@ -65,3 +65,4 @@ todo_too/
 │   └── public/             # Статические файлы
 └── docker-compose.yml      # Конфигурация сервисов
 ```
+
