@@ -23,35 +23,45 @@
 2. **Запустите контейнеры:**
    ```bash
    docker-compose up --build
+   ```
+
 ---
 
-## 🛠 ЛОКАЛ СТАРТ 
+## 🛠 Локальный запуск
 
 Если вы хотите запустить проект без Docker:
 
-
 1. **Клонируйте репозиторий**
-2. **BACKEND**
-		`
-		cd backend
-		poetry install
-		poetry run python main.py 
-		`
-3. **FRONTEND**
-		`
-		cd frontend
-		npm i
-		npm run dev 
-		`
+
+2. **Backend:**
+   ```bash
+   cd backend
+   poetry install
+   poetry run python main.py
+   ```
+
+3. **Frontend:**
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
 ## 📁 Структура проекта
+
+```
 todo_too/
-	`
-	├── backend/           # FastAPI приложение
-	│   ├── Dockerfile     # Сборка образа бэкенда
-	│   ├── main.py        # Точка входа
-	│   └── pyproject.toml # Зависимости Poetry
-	├── frontend/          # Next.js приложение
-	│   ├── Dockerfile     # Сборка образа фронтенда
-	│   └── src/           # Исходный код
-	└── docker-compose.yml # Конфигурация всех сервисов		
-			`
+├── backend/                 # FastAPI приложение
+│   ├── Dockerfile          # Сборка образа бэкенда
+│   ├── main.py             # Точка входа
+│   ├── pyproject.toml      # Зависимости Poetry
+│   └── poetry.lock         # Заблокированная версия зависимостей
+├── frontend/               # Next.js приложение
+│   ├── Dockerfile          # Сборка образа фронтенда
+│   ├── app/                # Приложение Next.js
+│   │   ├── layout.tsx      # Главный layout
+│   │   ├── page.tsx        # Главная страница
+│   │   └── state/          # Управление состоянием
+│   ├── package.json        # Зависимости Node.js
+│   └── public/             # Статические файлы
+└── docker-compose.yml      # Конфигурация сервисов
+```
