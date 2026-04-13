@@ -1,4 +1,4 @@
-# ✅ Todo Too
+# ✅ TODO-APP 
 
 > Современное Full-stack приложение для управления задачами с использованием FastAPI и Next.js.
 
