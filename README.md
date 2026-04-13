@@ -35,7 +35,7 @@
 
 2. **Backend:**
    ```bash
-   npx I poetry
+   pipx install poetry
    cd backend
    poetry install
    poetry run python main.py
